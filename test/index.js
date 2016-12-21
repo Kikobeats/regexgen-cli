@@ -1,3 +1,5 @@
+/* global describe, it */
+
 'use strict'
 
 const exec = require('child_process').execFileSync
@@ -9,12 +11,12 @@ require('should')
 
 describe('regexgen-cli', function () {
   it('get input from CLI', function () {
-    const output = exec(cli, ['foo', 'bar'], { encoding: 'utf8'})
+    const output = exec(cli, ['foo', 'bar'], {encoding: 'utf8'})
     output.should.be.equal('/bar|foo/')
   })
 
   it('get input from stdin', function () {
-    const output = exec(cli, { encoding: 'utf8', input: JSON.stringify(['foo', 'bar'])})
+    const output = exec(cli, {encoding: 'utf8', input: JSON.stringify(['foo', 'bar'])})
     output.should.be.equal('/bar|foo/')
   })
 })
