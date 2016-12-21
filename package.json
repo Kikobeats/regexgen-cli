@@ -40,7 +40,7 @@
     "standard-markdown": "latest"
   },
   "engines": {
-    "node": ">= 6"
+    "node": ">= 0.12"
   },
   "files": [
     "bin"
