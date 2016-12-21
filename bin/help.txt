@@ -1,0 +1,6 @@
+Usage
+  $ regexgen <inputs>
+
+Examples
+  $ regexgen foobar foobaz foozap fooza
+  $ jq '.keywords' package.json | regexgen

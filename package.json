@@ -1,0 +1,57 @@
+{
+  "name": "regexgen-cli",
+  "description": "Generates regular expressions that match a set of strings.",
+  "homepage": "https://github.com/Kikobeats/regexgen-cli",
+  "version": "0.0.0",
+  "main": "index.js",
+  "bin": {
+    "regexgen": "bin/index.js"
+  },
+  "author": {
+    "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/regexgen-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/regexgen-cli/issues"
+  },
+  "keywords": [
+    "regexgen",
+    "cli"
+  ],
+  "dependencies": {
+    "get-stdin": "~5.0.1",
+    "meow": "~3.7.0",
+    "nodeify": "~1.0.0",
+    "regexgen": "~1.0.0",
+    "update-notifier": "~1.0.3"
+  },
+  "devDependencies": {
+    "coveralls": "latest",
+    "git-dirty": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "should": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard-markdown && standard",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
+  },
+  "preferGlobal": true,
+  "license": "MIT"
+}
