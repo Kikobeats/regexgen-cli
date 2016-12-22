@@ -26,7 +26,7 @@
   "dependencies": {
     "get-stdin": "~5.0.1",
     "meow": "~3.7.0",
-    "regexgen": "~1.0.0",
+    "regexgen": "~1.2.0",
     "update-notifier": "~1.0.3"
   },
   "devDependencies": {
