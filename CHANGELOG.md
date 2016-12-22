@@ -1,3 +1,11 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2016-12-22)
+
+* Add flags support ([a0b9ec0](https://github.com/kikobeats/regexgen-cli/commit/a0b9ec0))
+* fix(package): update regexgen to version 1.2.0 ([a98ad15](https://github.com/kikobeats/regexgen-cli/commit/a98ad15))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2016-12-22)
 
