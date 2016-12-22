@@ -23,13 +23,14 @@ function parseJSON (str) {
 
 getStdin().then((stdin) => {
   const input = parseJSON(stdin) || stdin || cli.input
+  const flags = Object.keys(cli.flags).join('')
 
   if (!input.length) {
     cli.showHelp()
     process.exit(1)
   }
 
-  const output = regexgen(input)
+  const output = regexgen(input, flags)
   process.stdout.write(output.toString())
   process.exit(0)
 })

@@ -1,5 +1,5 @@
 Usage
-  $ regexgen <inputs>
+  $ regexgen [-gimuy] string1 string2 string3...
 
 Examples
   $ regexgen foobar foobaz foozap fooza
