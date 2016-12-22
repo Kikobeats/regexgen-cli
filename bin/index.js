@@ -3,7 +3,7 @@
 
 const pkg = require('../package.json')
 const regexgen = require('regexgen')
-const nodeify = require('nodeify')
+const getStdin = require('get-stdin')
 const path = require('path')
 
 require('update-notifier')({pkg: pkg}).notify()
@@ -13,8 +13,6 @@ const cli = require('meow')({
   help: require('fs').readFileSync(path.join(__dirname, 'help.txt'), 'utf8')
 })
 
-const getStdin = (cb) => nodeify(require('get-stdin')(), cb)
-
 function parseJSON (str) {
   try {
     return JSON.parse(str)
@@ -23,9 +21,7 @@ function parseJSON (str) {
   }
 }
 
-getStdin(function (err, stdin) {
-  if (err) throw err
-
+getStdin().then((stdin) => {
   const input = parseJSON(stdin) || stdin || cli.input
 
   if (!input.length) {
