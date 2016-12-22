@@ -2,7 +2,7 @@
   "name": "regexgen-cli",
   "description": "Generates regular expressions that match a set of strings.",
   "homepage": "https://github.com/Kikobeats/regexgen-cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": {
     "regexgen": "bin/index.js"
