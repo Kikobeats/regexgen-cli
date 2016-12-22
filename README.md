@@ -8,7 +8,7 @@
 [![NPM Status](https://img.shields.io/npm/dm/regexgen-cli.svg?style=flat-square)](https://www.npmjs.org/package/regexgen-cli)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> CLI interface for regexgen. It Generates regular expressions that match a set of strings.
+> CLI interface for [regexgen](https://github.com/devongovett/regexgen). It Generates regular expressions that match a set of strings.
 
 ## Install
 
