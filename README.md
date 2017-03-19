@@ -24,12 +24,11 @@ $ regexgen --help
   Generates regular expressions that match a set of strings.
 
   Usage
-    $ regexgen <inputs>
+    $ regexgen [-gimuy] string1 string2 string3...
 
   Examples
     $ regexgen foobar foobaz foozap fooza
     $ jq '.keywords' package.json | regexgen
-
 ```
 
 ## License
