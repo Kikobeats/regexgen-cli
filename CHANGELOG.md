@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2017-03-19)
+
+* Fix linter ([c3b90f9](https://github.com/kikobeats/regexgen-cli/commit/c3b90f9))
+* Update command help ([d3139f9](https://github.com/kikobeats/regexgen-cli/commit/d3139f9))
+* chore(package): update update-notifier to version 2.1.0 ([c59ddcb](https://github.com/kikobeats/regexgen-cli/commit/c59ddcb))
+* fix(package): update update-notifier to version 2.0.0 ([9d06748](https://github.com/kikobeats/regexgen-cli/commit/9d06748))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-12-22)
 
