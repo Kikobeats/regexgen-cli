@@ -1,3 +1,10 @@
+<a name="1.1.2"></a>
+## 1.1.2 (2017-04-16)
+
+* Update deps ([06afd2d](https://github.com/kikobeats/regexgen-cli/commit/06afd2d))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2017-03-19)
 
