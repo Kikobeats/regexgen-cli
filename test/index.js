@@ -16,7 +16,7 @@ describe('regexgen-cli', function () {
   })
 
   it('get input from stdin', function () {
-    const output = exec(cli, {encoding: 'utf8', input: JSON.stringify(['foo', 'bar'])})
-    output.should.be.equal('/bar|foo/')
+    const output = exec(cli, {encoding: 'utf8', input: 'foobar\n'})
+    output.should.be.equal('/foobar/')
   })
 })
