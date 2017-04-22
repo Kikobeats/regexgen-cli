@@ -6,7 +6,7 @@ const regexgen = require('regexgen')
 const getStdin = require('get-stdin')
 const path = require('path')
 
-require('update-notifier')({pkg: pkg}).notify()
+require('update-notifier')({pkg}).notify()
 
 const cli = require('meow')({
   pkg: pkg,
@@ -17,20 +17,26 @@ function parseJSON (str) {
   try {
     return JSON.parse(str)
   } catch (err) {
-
   }
 }
 
-getStdin().then((stdin) => {
-  const input = parseJSON(stdin) || stdin || cli.input
-  const flags = Object.keys(cli.flags).join('')
+getStdin()
+  .then(stdin => stdin.substring(0, stdin.length - 1))
+  .then(stdin => parseJSON(stdin) || stdin || cli.input)
+  .then(input => [].concat(input))
+  .then(input => {
+    if (!input.length) {
+      cli.showHelp()
+      process.exit(1)
+    }
 
-  if (!input.length) {
-    cli.showHelp()
+    const flags = Object.keys(cli.flags).join('')
+    const output = regexgen([].concat(input), flags)
+
+    process.stdout.write(output.toString())
+    process.exit(0)
+  })
+  .catch(err => {
+    console.log(err)
     process.exit(1)
-  }
-
-  const output = regexgen(input, flags)
-  process.stdout.write(output.toString())
-  process.exit(0)
-})
+  })
