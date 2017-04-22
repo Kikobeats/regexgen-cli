@@ -1,3 +1,11 @@
+<a name="1.1.3"></a>
+## 1.1.3 (2017-04-22)
+
+* Fix test ([5814a32](https://github.com/kikobeats/regexgen-cli/commit/5814a32))
+* Improve read from stdin ([ae69c61](https://github.com/kikobeats/regexgen-cli/commit/ae69c61))
+
+
+
 <a name="1.1.2"></a>
 ## 1.1.2 (2017-04-16)
 
