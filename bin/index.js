@@ -4,6 +4,7 @@
 const pkg = require('../package.json')
 const regexgen = require('regexgen')
 const getStdin = require('get-stdin')
+const stripEof = require('strip-eof')
 const path = require('path')
 
 require('update-notifier')({pkg}).notify()
@@ -21,7 +22,7 @@ function parseJSON (str) {
 }
 
 getStdin()
-  .then(stdin => stdin.substring(0, stdin.length - 1))
+  .then(stripEof)
   .then(stdin => parseJSON(stdin) || stdin || cli.input)
   .then(input => [].concat(input))
   .then(input => {
