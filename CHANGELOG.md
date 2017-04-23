@@ -1,3 +1,10 @@
+<a name="1.1.4"></a>
+## 1.1.4 (2017-04-23)
+
+* Use strip-eof dep for clean the EOF ([9e1cd1e](https://github.com/kikobeats/regexgen-cli/commit/9e1cd1e))
+
+
+
 <a name="1.1.3"></a>
 ## 1.1.3 (2017-04-22)
 
