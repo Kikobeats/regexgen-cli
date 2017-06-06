@@ -28,7 +28,7 @@
     "meow": "~3.7.0",
     "regexgen": "~1.2.3",
     "strip-eof": "~1.0.0",
-    "update-notifier": "~2.1.0"
+    "update-notifier": "~2.2.0"
   },
   "devDependencies": {
     "coveralls": "latest",
