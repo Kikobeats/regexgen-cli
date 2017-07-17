@@ -1,5 +1,7 @@
 # regexgen-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/regexgen-cli.svg)](https://greenkeeper.io/)
+
 ![Last version](https://img.shields.io/github/tag/Kikobeats/regexgen-cli.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/regexgen-cli/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/regexgen-cli)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/regexgen-cli.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/regexgen-cli)
