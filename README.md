@@ -31,6 +31,10 @@ $ regexgen --help
     $ jq '.keywords' package.json | regexgen
 ```
 
+## Related
+
+- [randexp.js](https://github.com/fent/randexp.js) – Generate a random string that matches a given RegExp.
+
 ## License
 
 MIT © [Kiko Beats](https://github.com/Kikobeats).
