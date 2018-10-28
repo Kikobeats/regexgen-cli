@@ -4,7 +4,7 @@
 const pkg = require('../package.json')
 const regexgen = require('regexgen')
 const getStdin = require('get-stdin')
-const stripEof = require('strip-eof')
+const stripEof = require('strip-final-newline')
 const path = require('path')
 
 require('update-notifier')({ pkg }).notify()
