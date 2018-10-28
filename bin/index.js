@@ -7,7 +7,7 @@ const getStdin = require('get-stdin')
 const stripEof = require('strip-eof')
 const path = require('path')
 
-require('update-notifier')({pkg}).notify()
+require('update-notifier')({ pkg }).notify()
 
 const cli = require('meow')({
   pkg: pkg,
