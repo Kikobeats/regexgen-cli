@@ -31,13 +31,23 @@
     "update-notifier": "~2.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ci-publish": "latest",
+    "conventional-github-releaser": "latest",
     "coveralls": "latest",
+    "finepack": "latest",
+    "git-authors-cli": "latest",
     "git-dirty": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
     "mocha": "latest",
+    "npm-check-updates": "latest",
     "nyc": "latest",
     "should": "latest",
     "standard": "latest",
-    "standard-markdown": "latest"
+    "standard-markdown": "latest",
+    "standard-version": "latest"
   },
   "engines": {
     "node": ">= 6"
@@ -47,11 +57,42 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
+    "postrelease": "npm run release:tags && npm run release:github && ci-publish",
+    "prerelease": "npm run update:check && git-authors-cli",
     "pretest": "npm run lint",
-    "test": "nyc mocha"
+    "release": "git add package.json && standard-version -a",
+    "release:github": "conventional-github-releaser -p angular",
+    "release:tags": "git push --follow-tags origin HEAD:master",
+    "test": "nyc mocha",
+    "update": "ncu -a",
+    "update:check": "ncu -- --error-level 2"
   },
   "preferGlobal": true,
-  "license": "MIT"
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "package.json": [
+        "finepack",
+        "git add"
+      ]
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prechangelog": "git-authors-cli"
+    }
+  }
 }
