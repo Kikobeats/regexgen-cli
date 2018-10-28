@@ -1,3 +1,66 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="1.1.5"></a>
+## 1.1.5 (2018-10-28)
+
+
+### Bug Fixes
+
+* **package:** update get-stdin to version 6.0.0 ([fc85834](https://github.com/kikobeats/regexgen-cli/commit/fc85834))
+* **package:** update meow to version 4.0.0 ([bfc54d5](https://github.com/kikobeats/regexgen-cli/commit/bfc54d5))
+* **package:** update meow to version 5.0.0 ([bded669](https://github.com/kikobeats/regexgen-cli/commit/bded669))
+* **package:** update regexgen to version 1.3.0 ([1e3d181](https://github.com/kikobeats/regexgen-cli/commit/1e3d181))
+* **package:** update update-notifier to version 2.2.0 ([e3f6738](https://github.com/kikobeats/regexgen-cli/commit/e3f6738))
+* **package:** update update-notifier to version 2.3.0 ([8ae7129](https://github.com/kikobeats/regexgen-cli/commit/8ae7129))
+* **package:** update update-notifier to version 2.4.0 ([9734f73](https://github.com/kikobeats/regexgen-cli/commit/9734f73))
+* **package:** update update-notifier to version 2.5.0 ([f25b9e7](https://github.com/kikobeats/regexgen-cli/commit/f25b9e7))
+* automate workflow ([6b13355](https://github.com/kikobeats/regexgen-cli/commit/6b13355))
+* linter ([074f876](https://github.com/kikobeats/regexgen-cli/commit/074f876))
+
+
+
+<a name="1.1.4"></a>
+## 1.1.4 (2017-04-23)
+
+
+
+<a name="1.1.3"></a>
+## 1.1.3 (2017-04-22)
+
+
+
+<a name="1.1.2"></a>
+## 1.1.2 (2017-04-16)
+
+
+
+<a name="1.1.1"></a>
+## 1.1.1 (2017-03-19)
+
+
+### Bug Fixes
+
+* **package:** update update-notifier to version 2.0.0 ([9d06748](https://github.com/kikobeats/regexgen-cli/commit/9d06748))
+
+
+
+<a name="1.1.0"></a>
+# 1.1.0 (2016-12-22)
+
+
+### Bug Fixes
+
+* **package:** update regexgen to version 1.2.0 ([a98ad15](https://github.com/kikobeats/regexgen-cli/commit/a98ad15))
+
+
+
+<a name="1.0.0"></a>
+# 1.0.0 (2016-12-22)
+
+
+
 <a name="1.1.4"></a>
 ## 1.1.4 (2017-04-23)
 
@@ -47,6 +110,3 @@
 * Fix linter ([adef075](https://github.com/kikobeats/regexgen-cli/commit/adef075))
 * Setup node version ([6f79617](https://github.com/kikobeats/regexgen-cli/commit/6f79617))
 * Update docs ([7cbe46b](https://github.com/kikobeats/regexgen-cli/commit/7cbe46b))
-
-
-
