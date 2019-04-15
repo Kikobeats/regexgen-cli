@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.6](https://github.com/kikobeats/regexgen-cli/compare/v1.1.5...v1.1.6) (2019-04-15)
+
+
+### Bug Fixes
+
+* **package:** update get-stdin to version 7.0.0 ([c644a64](https://github.com/kikobeats/regexgen-cli/commit/c644a64))
+
+
+
 <a name="1.1.5"></a>
 ## 1.1.5 (2018-10-28)
 
