@@ -1,6 +1,20 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.1.7](https://github.com/kikobeats/regexgen-cli/compare/v1.1.6...v1.1.7) (2019-05-20)
+
+
+### Bug Fixes
+
+* **package:** update update-notifier to version 2.6.0 ([316c5fa](https://github.com/kikobeats/regexgen-cli/commit/316c5fa))
+
+
+### Build System
+
+* change git-authors-cli position ([4fa9f51](https://github.com/kikobeats/regexgen-cli/commit/4fa9f51))
+
+
 
 ## [1.1.6](https://github.com/kikobeats/regexgen-cli/compare/v1.1.5...v1.1.6) (2019-04-15)
 
