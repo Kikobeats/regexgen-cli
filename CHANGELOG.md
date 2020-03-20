@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.11](https://github.com/kikobeats/regexgen-cli/compare/v1.1.10...v1.1.11) (2020-03-20)
+
 ### [1.1.10](https://github.com/kikobeats/regexgen-cli/compare/v1.1.8...v1.1.10) (2020-02-17)
 
 ### [1.1.9](https://github.com/kikobeats/regexgen-cli/compare/v1.1.8...v1.1.9) (2020-01-20)
