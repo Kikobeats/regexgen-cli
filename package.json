@@ -1,7 +1,7 @@
 {
   "name": "regexgen-cli",
   "description": "Generates regular expressions that match a set of strings.",
-  "homepage": "https://nicedoc.io/Kikobeats/regexgen-cli",
+  "homepage": "https://github.com/Kikobeats/regexgen-cli",
   "version": "1.1.17",
   "main": "index.js",
   "bin": {
@@ -39,8 +39,8 @@
     "finepack": "latest",
     "git-authors-cli": "latest",
     "git-dirty": "latest",
-    "husky": "latest",
-    "lint-staged": "latest",
+    "simple-git-hooks": "latest",
+    "nano-staged": "latest",
     "mocha": "latest",
     "npm-check-updates": "latest",
     "nyc": "latest",
@@ -76,13 +76,11 @@
       "@commitlint/config-conventional"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
+  "simple-git-hooks": {
+  "commit-msg": "npx commitlint --edit",
+  "pre-commit": "npx nano-staged"
+},
+  "nano-staged": {
     "package.json": [
       "finepack",
       "git add"

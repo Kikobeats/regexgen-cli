@@ -17,8 +17,7 @@ const cli = require('meow')({
 function parseJSON (str) {
   try {
     return JSON.parse(str)
-  } catch (err) {
-  }
+  } catch (err) {}
 }
 
 getStdin()
@@ -35,9 +34,9 @@ getStdin()
     const output = regexgen([].concat(input), flags)
 
     process.stdout.write(output.toString())
-    process.exit(0)
+    process.exit()
   })
-  .catch(err => {
-    console.log(err)
+  .catch(error => {
+    console.log(error)
     process.exit(1)
   })
