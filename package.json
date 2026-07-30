@@ -1,6 +1,6 @@
 {
   "name": "regexgen-cli",
-  "description": "Generates regular expressions that match a set of strings.",
+  "description": "CLI for regexgen — generate an optimized regular expression that matches a given set of strings.",
   "homepage": "https://github.com/Kikobeats/regexgen-cli",
   "version": "1.1.17",
   "main": "index.js",
@@ -20,8 +20,16 @@
     "url": "https://github.com/Kikobeats/regexgen-cli/issues"
   },
   "keywords": [
+    "automaton",
     "cli",
-    "regexgen"
+    "dfa",
+    "generate",
+    "match",
+    "pattern",
+    "regex",
+    "regexgen",
+    "regexp",
+    "strings"
   ],
   "dependencies": {
     "get-stdin": "~8.0.0",
@@ -34,17 +42,16 @@
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "ci-publish": "latest",
-    "conventional-github-releaser": "latest",
     "coveralls": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
     "git-dirty": "latest",
-    "simple-git-hooks": "latest",
-    "nano-staged": "latest",
+    "github-generate-release": "latest",
     "mocha": "latest",
-    "npm-check-updates": "latest",
+    "nano-staged": "latest",
     "nyc": "latest",
     "should": "latest",
+    "simple-git-hooks": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
     "standard-version": "latest"
@@ -60,30 +67,33 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
     "postrelease": "npm run release:tags && npm run release:github && ci-publish",
-    "prerelease": "npm run update:check",
     "pretest": "npm run lint",
     "release": "git-authors-cli && git add package.json && standard-version -a",
-    "release:github": "conventional-github-releaser -p angular",
+    "release:github": "github-generate-release",
     "release:tags": "git push --follow-tags origin HEAD:master",
     "test": "nyc mocha",
-    "update": "ncu -a",
-    "update:check": "ncu -- --error-level 2"
+    "update": "ncu -a"
   },
   "preferGlobal": true,
   "license": "MIT",
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
-    ]
+    ],
+    "rules": {
+      "body-max-line-length": [
+        0
+      ]
+    }
   },
-  "simple-git-hooks": {
-  "commit-msg": "npx commitlint --edit",
-  "pre-commit": "npx nano-staged"
-},
   "nano-staged": {
     "package.json": [
       "finepack",
       "git add"
     ]
+  },
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
+    "pre-commit": "npx nano-staged"
   }
 }
